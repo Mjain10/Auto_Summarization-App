@@ -1,3 +1,5 @@
+# Processes length and distance and redundancy parameters of a sentence stored in Textblob for summarization
+
 from textblob import TextBlob
 from project_tools import *
 
@@ -37,6 +39,5 @@ def points_by_length_and_distance_from_begining(text:TextBlob):
 
 if __name__ == '__main__':
     #For testing
-    print(length_tuples(TextBlob('I am Amitesh. This is a summarization project.')))
     print(repeating_words(TextBlob('This is a check for redundant words and redundant phrases phrases. Being redundant is is redundant. This is not a repeating sentence')))
     print(redundant_words(TextBlob('This is absolutely and completely neccessary. It was a very unintentional phenonmenon')))
